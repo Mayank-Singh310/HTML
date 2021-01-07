@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head><title>MENU</title>
+<style>
+ul{
+list-style-type:none;
+margin:10px;
+padding:15px;
+overflow:hidden;
+background-color:red;
+}
+li{float:left;}
+li a{
+display:block;
+color:black;
+text-align:center;
+text-decoration:none;
+padding:16px;
+margin:10px;
+}
+li a:hover{
+background-color:#11111;
+}
+
+</style>
+
+</head>
+<body>
+<ul>
+   <li><a href="#HOME">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>
+	 <li><a href="#contact">CONTACT</a></li>
+	 <li><a href="#news">NEWS</a></li>
+	 <li><a href="#menu">MENU</a></li>
+
+</ul>
+<form method="GET" action="submit.php">
+ <div>TEXT:<input type="text">
+</div>
+     <div>submit button:<input type="submit" value="submit form"></br>
+</div>
+<div>color:<input type="color">
+</div>
+<div>DATE:<input type="date">
+</div>
+<div>Email:<input type="email">
+</div>
+<div>HIDDEN<input type="hidden" value="kanpur">
+</div>
+<div>NUMBER:<input type="number">
+</div>
+<div>PASSWORD:<input type="password">
+</div>
+<div>Reset:<input type="reset" value="resetform">
+</div>
+<div>TIME:<input type="time">
+</div>
+<div>URL:<input type="url">
+</div>
+<div>RANGE:<input type="range" min="1000" max="10000">
+</div>
+<hr/>
+<form enctype="multipart/form-data">
+<div>File:<input type="file"></div>
+<div>MULTIPAL FILE:<input type="file" multiple></div>
+
+
+<div>NAME:<input type="text" value="your name">
+</div>
+<div>text:<input type="text" value="your name is" readonly>
+</div>
+<div>text:<input type="text" value="your name is" disabled>
+</div>
+<div>size:<input type="text" value="your name is" size="32">
+</div>
+<div>maxlength:<input type="text" value="your name is" maxlength="15">
+</div>
+<div>NUMBER:<input type="number" value="enter your number" min="7" max="10">
+</div>
+<div>text:<input type="text" placeholder="enter your name " >placeholderuse
+</div>
+<div>text:<input type="text" value="your name is" required>its required
+</div>
+<div>number step:<input type="number" value="number increment 2" step="2">
+</div>
+<div>text:<input type="text" value="your name is" autofocus>
+</div>
+<div>text:<input type="text" value="your name is" autocomplete="on">
+</div>
+<div>text:<input type="text" value="your name is" readonly>
+</div>
+<textarea rows="10"cols="15" placeholder="comment">
+
+baki sabhi text ke tag use honge
+
+
+</textarea>
+<div>image:<input type="image" src="C:\document\Tulips.jpg" height="30px" width="30px">
+</div>
+
+
+
+</form></br></br>
+
+</form></br></br>
+<form>
+<select>
+<option value="1">dm</option>
+<option value="2">c language</option>
+<option value="3">pm</option>
+<option value="4">foc</option>
+<option value="5">coa</option>
+</select>
+</br></br>
+<select>
+<option value="1">dm</option>
+<option value="2" selected>c language</option>
+<option value="3">pm</option>
+<option value="4">foc</option>
+<option value="5">coa</option>
+</select>
+</br></br>
+<select size="3">
+<option value="1">dm</option>
+<option value="2">c language</option>
+<option value="3">pm</option>
+<option value="4">foc</option>
+<option value="5">coa</option>
+</select></br></br>
+<select multiple>
+<option value="1">dm</option>
+<option value="2">c language</option>
+<option value="3">pm</option>
+<option value="4">foc</option>
+<option value="5">coa</option>
+</select></br></br>
+<select>
+<optgroup label="subject">
+<option value="1">dm</option>
+<option value="2">c language</option>
+<option value="3">pm</option>
+<option value="4">foc</option>
+<option value="5">coa</option></optgroup>
+              <optgroup label="time">
+            <option value="1">first</option>
+           <option value="2">second</option>
+           <option value="3">thried</option>
+            <option value="4">fourth</option>
+             <option value="5">fiveth</option>
+			 </optgroup></select>
+		</br></br><div>	 
+	gender:<input type="radio"value="male" >male	 
+			<input type="radio"value="female">female
+             <input type="radio" value="other">other 	</div>	
+<div>
+<input type="radio"value="male" name="gender" >male	 
+			<input type="radio"value="female" name="gender">female
+             <input type="radio" value="other" name="gender">other</div>	
+                 <div>
+<input type="radio"value="male" name="gender"  checked >male	 
+			<input type="radio"value="female" name="gender">female
+             <input type="radio" value="other" name="gender">other</div>			 
+</br></br><!--- we can check more then one option-->
+<div>
+<input type="checkbox"value="male" name="gender"  checked >male	 
+			<input type="checkbox"value="female" name="gender">female
+             <input type="checkbox" value="other" name="gender">other</div>
+		<br><br>
+		<input type="text" list="search">	
+<datalist id="search">
+<option value="apple">
+<option value="mango">
+<option value="orange">
+<option value="banana">
+</datalist>		
+<input type="submit" value="submit">		
+			 
+</form>
+
+<form> 
+<fieldset><legend>basic information</legend>
+<label for="name">TEXT:</label><input type="text" id="name">
+
+     <label for="submit">submit button:</label> <input type="submit" value="submit form" id="submit">
+
+<label for="color">color:</label><input type="color" id="color">
+</fieldset>
+<fieldset><legend> importent information</legend>
+DATE:<input type="date">
+
+Email:<input type="email">
+
+<HIDDEN<input type="hidden" value="kanpur">
+
+NUMBER:<input type="number">
+
+PASSWORD:<input type="password">
+
+Reset:<input type="reset" value="resetform">
+</fieldset>
+</form>
+
+</body>
+
+</html>
